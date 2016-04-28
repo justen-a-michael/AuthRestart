@@ -1,10 +1,6 @@
 ﻿@model SportsStore.WebUI.Models.LoginModel
-@{
-    ViewBag.Title = "Login";
-}
-
-<h2>Login</h2>
-
+@{ ViewBag.Title = "Login";}
+<h2>Log In</h2>
 @Html.ValidationSummary()
 
 @using (Html.BeginForm())
@@ -20,4 +16,4 @@
         @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
     </div>
     <button class="btn btn-primary" type="submit">Log In</button>
-}
+} 

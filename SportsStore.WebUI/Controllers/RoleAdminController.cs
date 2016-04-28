@@ -11,6 +11,7 @@ using System.Collections.Generic;
 
 namespace SportsStore.WebUI.Controllers
 {
+    [Authorize(Roles = "Administrators")]
     public class RoleAdminController : Controller
     {
         // GET: RoleAdmin
