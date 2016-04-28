@@ -17,6 +17,7 @@ namespace SportsStore.WebUI.Controllers {
             this.repository = productRepository;
         }
 
+        [Authorize]
         public ViewResult List(string category, int page = 1) {
             ProductsListViewModel model = new ProductsListViewModel {
                 Products = repository.Products

@@ -15,6 +15,7 @@ namespace SportsStore.WebUI.Controllers
 			repository = repo;
 		}
 
+        [Authorize]
         public ViewResult Index(Cart cart, string returnUrl)
         {
             return View(new CartIndexViewModel
