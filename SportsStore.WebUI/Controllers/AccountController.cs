@@ -4,14 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Threading.Tasks;
-using System.Web.Mvc;
 using SportsStore.WebUI.Models;
 using Microsoft.Owin.Security;
 using System.Security.Claims;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using SportsStore.WebUI.Infrastructure;
-using System.Web;
 
 namespace SportsStore.WebUI.Controllers
 {

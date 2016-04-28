@@ -16,6 +16,7 @@ namespace SportsStore.WebUI.App_Start
         {
             app.CreatePerOwinContext<AppEFDbContext>(AppEFDbContext.Create);
             app.CreatePerOwinContext<AppUserManager>(AppUserManager.Create);
+            app.CreatePerOwinContext<AppRoleManager>(AppRoleManager.Create);
 
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
