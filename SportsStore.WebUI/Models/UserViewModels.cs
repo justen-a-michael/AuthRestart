@@ -19,4 +19,12 @@ namespace SportsStore.WebUI.Models
         [Required]
         public string password { get; set; }
     }
+
+    public class LoginModel
+    {
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public string Password { get; set; }
+    }
 }
