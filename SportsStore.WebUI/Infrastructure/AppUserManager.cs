@@ -32,11 +32,11 @@ namespace SportsStore.WebUI.Infrastructure
                 RequireUppercase = true
             };
 
-            manager.UserValidator = new CustomUserValidation(manager)
-            {
-                AllowOnlyAlphanumericUserNames = true,
-                RequireUniqueEmail = true
-            };
+            //manager.UserValidator = new CustomUserValidation(manager)
+            //{
+            //    AllowOnlyAlphanumericUserNames = true,
+            //    RequireUniqueEmail = true
+            //};
 
             //manager.PasswordValidator = new PasswordValidator
             //{

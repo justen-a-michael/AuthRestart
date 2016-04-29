@@ -87,3 +87,5 @@ C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Microsof
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.WebUI\bin\Microsoft.Owin.Security.Google.xml

@@ -83,3 +83,5 @@ C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debu
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Justen\Documents\SportsStore\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.Owin.Security.Google.xml

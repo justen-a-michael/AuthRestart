@@ -7,6 +7,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 using SportsStore.WebUI.Infrastructure;
+using Microsoft.Owin.Security.Google;
 
 namespace SportsStore.WebUI.App_Start
 {
@@ -23,6 +24,9 @@ namespace SportsStore.WebUI.App_Start
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
             });
+
+            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+            app.UseGoogleAuthentication();
         }
     }
 }
