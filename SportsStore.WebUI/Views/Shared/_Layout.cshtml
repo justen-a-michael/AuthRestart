@@ -19,6 +19,9 @@
         <div class="col-xs-8">
             @RenderBody()
         </div>
+        <div class="row panel">
+            @Html.ActionLink("Sign Out", "Logout", "Account", null, new { @class = "btn btn-primary" })
+        </div>
     </div>
 </body>
 </html>

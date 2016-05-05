@@ -44,8 +44,8 @@ namespace SportsStore.WebUI.Controllers
                 {
                     ClaimsIdentity ident = await UserManager.CreateIdentityAsync(user,
                         DefaultAuthenticationTypes.ApplicationCookie);
-                    ident.AddClaims(LocationClaimsProvider.GetClaims(ident));
-                    ident.AddClaims(ClaimsRoles.CreateRolesFromClaims(ident));
+                    //ident.AddClaims(LocationClaimsProvider.GetClaims(ident));
+                    //ident.AddClaims(ClaimsRoles.CreateRolesFromClaims(ident));
                     AuthManager.SignOut();
                     AuthManager.SignIn(new AuthenticationProperties
                     {
@@ -82,8 +82,8 @@ namespace SportsStore.WebUI.Controllers
                 {
                     Email = loginInfo.Email,
                     UserName = loginInfo.DefaultUserName,
-                    City = Cities.LONDON,
-                    Country = Countries.UK
+                    //City = Cities.LONDON,
+                    //Country = Countries.UK
                 };
             IdentityResult result = await UserManager.CreateAsync(user);
                 if (!result.Succeeded)
@@ -113,7 +113,8 @@ namespace SportsStore.WebUI.Controllers
         public ActionResult Logout()
         {
             AuthManager.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
+            //return RedirectToAction("Index", "Home");
         }
 
         private IAuthenticationManager AuthManager

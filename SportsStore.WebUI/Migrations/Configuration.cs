@@ -36,13 +36,13 @@ namespace SportsStore.WebUI.Migrations
             {
                 userMgr.AddToRole(user.Id, roleName);
             }
-            foreach (AppUser dbUser in userMgr.Users)
-            {
-                if (dbUser.Country == Countries.NONE)
-                {
-                    dbUser.SetCountryFromCity(dbUser.City);
-                }
-            }
+            //foreach (AppUser dbUser in userMgr.Users)
+            //{
+            //    if (dbUser.Country == Countries.NONE)
+            //    {
+            //        dbUser.SetCountryFromCity(dbUser.City);
+            //    }
+            //}
             context.SaveChanges();
         }
     }
