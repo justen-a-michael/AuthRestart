@@ -11,6 +11,7 @@ using System.Security.Principal;
 namespace SportsStore.WebUI.Controllers {
 
     public class ProductController : Controller {
+        public List<Product> peepee = new List<Product>();
 
         private IProductRepository repository;
         public int PageSize = 4;
@@ -18,6 +19,25 @@ namespace SportsStore.WebUI.Controllers {
         public ProductController(IProductRepository productRepository)
         {
             this.repository = productRepository;
+        }
+        
+        public ViewResult Summary(string returnUrl, int id)
+        {
+            return View(new ProductsListViewModel
+            {
+                ReturnUrl = returnUrl,
+                Id = id
+            });
+        }
+
+        public RedirectToRouteResult fuck(int id, string returnUrl)
+        {
+            Product poopoo = repository.Products.FirstOrDefault(p => p.ProductID == id);
+            if (poopoo != null)
+            {
+                return RedirectToAction("Summary", new { returnUrl });
+            }
+            return RedirectToAction("Summary", new { returnUrl });
         }
 
         [Authorize]

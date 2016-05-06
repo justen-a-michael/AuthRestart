@@ -7,6 +7,15 @@
                   label-primary">@Model.Price.ToString("c")</span>
         </h3>
 
+        @using (Html.BeginForm("fuck", "Product"))
+        {
+            <div class="pull-right">
+                @Html.HiddenFor(x => x.ProductID)
+                @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                <input type="submit" class="btn btn-success" value="Details" />
+             </div>
+        }
+
         @using (Html.BeginForm("AddToCart", "Cart"))
         {
             <div class="pull-right">
